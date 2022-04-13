@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practicas de JavaScript</title>
+  <link rel="stylesheet" href="/bin2dec.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <title>Bin2Dec</title>
 </head>
+
 <body>
-   <ul>
-      <li>
-        <a href="index.html">Inicio</a>
-      </li>
-      <li>
-        <a href="bin2dec.html">Ejercicio 1</a>
-      </li>
-      
-   </ul>
+  <main class="main">
+    <h1 class="title">Bin2Dec</h1>
+    <div class="container">
+      <div class="container__cel container__cel--dec">
+        <label for="bin" class="conatiner__label">Binary</label>
+        <input class="container__input container__input--bin" type="text" id="bin" placeholder="Enter binary number" autocomplete="off">
+      </div>
+      <p class="validate" id="validate-info"></p>
+      <div class="container__cel">
+        <label for="dec" class="conatiner__label">Decimal</label>
+        <input class="container__input container__input--dec" type="text" id="dec" placeholder="Result" disabled>
+      </div>
+      <button type="submit" id="btn" class="btn">Calculate</button>
+    </div>
+  </main>
+  <script src="/bin2dec.js"></script>
 </body>
+
 </html>
